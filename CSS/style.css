@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.logo {
+    position:absolute;
+	left: 55px;
+	top:25px;
+}
+
+.block_row {
+    display: inline-flex;
+justify-content: space-between;
+position: relative;
+ width: 360px;
+ padding-left: 750px;
+padding-top: 33px;
+}
+
+.block_row::after{
+content: "";
+position: absolute;
+width: 396px;
+height: 1px;
+background-color: #FF0101;
+bottom: -9px;
+}
+
+
+.block_item {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.block_item:hover {
+    color: #71a89e;
+}
+ 
+.content {
+    position:absolute;
+	left: 70px;
+	top:300px;
+}
+
+.title {
+    display: inline-block;
+    width: 500px;
+    height: 224px;
+    margin-top: 200px;
+    margin-left: 65px;
+}
+.subtitle {
+    margin-top: -130px;
+    margin-left: 65px;
+}
+
+.btn {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 25px;
+    border-radius: 8px;
+    padding: 15px 10px 15px 10px;
+    transition: 0.3s all;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #71a89e;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s all;
+}
+
+.img {
+float: right;
+max-width: 100%;
+height: auto;
+margin-top: 65px;
+margin-right: 10px;
+object-fit: cover;
+}
+
+@media  (max-width:1200px){
+    .container{
+        max-width: 970px;
+    }
+    .img {
+        float: right;
+        max-width: 100%;
+        height: auto;
+        margin-top: 65px;
+        margin-right: 10px;
+        object-fit: cover;
+        }
+        .title {
+            position: absolute;
+            display: inline-block;
+            width: 500px;
+            height: 224px;
+            margin-top: 20px;
+            margin-left: 65px;
+            top: 800px;
+        }
+        .subtitle {
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 65px;
+        }
+}
+
+@media  (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+    .img {
+        float: right;
+        max-width: 100%;
+        height: auto;
+        margin-top: 65px;
+        margin-right: 10px;
+        object-fit: cover;
+        }
+        .title {
+            position: absolute;
+            display: inline-block;
+            width: 500px;
+            height: 224px;
+            margin-top: 20px;
+            margin-left: 65px;
+            top: 800px;}
+}
+
+@media  (max-width:767px){
+    .container{
+        max-width: 576px;
+    }
+    .img {
+        float: right;
+        max-width: 100%;
+        height: auto;
+        margin-top: 65px;
+        margin-right: 10px;
+        object-fit: cover;
+        }
+        .title {
+            position: absolute;
+            display: inline-block;
+            width: 500px;
+            height: 224px;
+            margin-top: 20px;
+            margin-left: 65px;
+            top: 800px;}
+        
+}
+
+@media  (max-width:565px){
+    .container{
+        max-width: none;
+    }
+    .img {
+        float: right;
+        max-width: 100%;
+        height: auto;
+        margin-top: 35px;
+        margin-left: 600px;
+        }     
+        .title {
+            position: absolute;
+            display: inline-block;
+            max-width: 100%;
+            width: 500px;
+            height: 224px;
+            margin-top: -390px;
+            margin-left: -4px;
+            top: 800px; 
+           font-size: 20px;
+        }
+            .subtitle {
+                margin-top: 70px;
+                margin-left: 15px;
+            }
+            
+            .btn {
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                display: inline-block;
+                margin-left: 55px;
+                margin-top: 120px;
+                border-radius: 8px;
+                padding: 15px 10px 15px 10px;
+                transition: 0.3s all;
+            }
+            
+            .btn:hover {
+                color: #ffffff;
+                background-color: #71a89e;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+                transition: 0.3s all;
+            }
+            
+}
